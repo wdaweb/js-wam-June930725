@@ -1,0 +1,378 @@
+* {
+    margin: auto;
+    padding: 0;
+    font-family: "微軟正黑體";
+    font-size: 30px;
+    font-weight: bolder;
+  }
+
+  body {
+    width: 100vh;
+    height: 100vh;
+    /* 50 50 為 x 軸與 y 軸偏移的值，auto 為更改滑鼠預設箭頭為 url 圖片 */
+    cursor: url("./images/weapon_up.png") 25 25, auto;
+
+    /* cover前要有 定位跟斜線 center center/cover */
+    background: url("./images/bg-pic.jpg") no-repeat;
+    background-size: cover;
+    overflow: hidden;
+  }
+
+  .mouse-change {
+    cursor: url("./images/weapon_down.png") 25 25, auto;
+  }
+
+  .bar {
+    position: fixed;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-52%);
+  }
+
+  .bartime {
+    width: 200px;
+    height: 10px;
+    background: crimson;
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: blood linear reverse 10s forwards;
+  }
+
+  @keyframes blood {
+    100% {
+      width: 200px;
+    }
+
+    0% {
+      width: 0px;
+    }
+  }
+  
+  td {
+    width: 250px;
+    height: 250px;
+    background: url("./images/hole_top.png") no-repeat;
+  }
+
+  .text-area {
+    position: fixed;
+    top: 65%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .record {
+    position: fixed;
+    top: 80%;
+    left: 20%;
+  }
+
+  .monster {
+    background: url("./images/monster-h2.png") no-repeat center;
+  }
+
+  .hit {
+    background: url("./images/monster-h2-1.png") no-repeat center;
+  }
+
+  #hole1 {
+    display: inline-block;
+    position: fixed;
+    top: 0%;
+    left: 18%;
+    animation: move-1 ease-in-out alternate 2.5s infinite;
+  }
+
+  @keyframes move-1 {
+    100% {
+      transform: translateX(-100px);
+    }
+
+    0% {
+      transform: translateX(100px);
+    }
+  }
+
+  #hole2 {
+    display: inline-block;
+    position: fixed;
+    top: 12%;
+    left: 5%;
+    animation: move-2 ease-in-out alternate 1.5s infinite;
+  }
+
+  @keyframes move-2 {
+    100% {
+      transform: translateX(-50px);
+    }
+
+    0% {
+      transform: translateX(180px);
+    }
+  }
+
+  #hole3 {
+    display: inline-block;
+    position: fixed;
+    top: 22%;
+    left: 23%;
+    animation: move-3 ease-in-out alternate 2s infinite;
+  }
+
+  @keyframes move-3 {
+    100% {
+      transform: translateX(-50px);
+    }
+
+    0% {
+      transform: translateX(20px);
+    }
+  }
+
+  #hole4 {
+    display: inline-block;
+    position: fixed;
+    top: 30%;
+    left: 10%;
+    animation: move-4 ease-in-out alternate 1s infinite;
+  }
+
+  @keyframes move-4 {
+    100% {
+      transform: translateX(-150px);
+    }
+
+    0% {
+      transform: translateX(0px);
+    }
+  }
+
+  #hole5 {
+    display: inline-block;
+    position: fixed;
+    top: 50%;
+    left: 8%;
+    animation: move-5 ease-in-out alternate 3s infinite;
+  }
+
+  @keyframes move-5 {
+    100% {
+      transform: translateX(-70px);
+    }
+
+    0% {
+      transform: translateX(10px);
+    }
+  }
+
+  #hole6 {
+    display: inline-block;
+    position: fixed;
+    top: 55%;
+    left: 28%;
+    animation: move-6 ease-in-out alternate 1.2s infinite;
+  }
+
+  @keyframes move-6 {
+    100% {
+      transform: translateX(-150px);
+    }
+
+    0% {
+      transform: translateX(50px);
+    }
+  }
+
+  #hole7 {
+    display: inline-block;
+    position: fixed;
+    top: 70%;
+    left: 15%;
+    animation: move-7 ease-in-out alternate 1.5s infinite;
+  }
+
+  @keyframes move-7 {
+    100% {
+      transform: translateX(-100px);
+    }
+
+    0% {
+      transform: translateX(150px);
+    }
+  }
+
+  #hole8 {
+    display: inline-block;
+    position: fixed;
+    top: 5%;
+    left: 62%;
+    animation: move-8 ease-in-out alternate 2s infinite;
+  }
+
+  @keyframes move-8 {
+    100% {
+      transform: translateX(-50px);
+    }
+
+    0% {
+      transform: translateX(50px);
+    }
+  }
+
+  #hole9 {
+    display: inline-block;
+    position: fixed;
+    top: 3%;
+    left: 80%;
+    animation: move-9 ease-in-out alternate 3s infinite;
+  }
+
+  @keyframes move-9 {
+    100% {
+      transform: translateX(-50px);
+    }
+
+    0% {
+      transform: translateX(80px);
+    }
+  }
+
+  #hole10 {
+    display: inline-block;
+    position: fixed;
+    top: 17%;
+    left: 75%;
+    animation: move-10 ease-in-out alternate 2s infinite;
+  }
+
+  @keyframes move-10 {
+    100% {
+      transform: translateX(-100px);
+    }
+
+    0% {
+      transform: translateX(120px);
+    }
+  }
+
+  #hole11 {
+    display: inline-block;
+    position: fixed;
+    top: 38%;
+    left: 68%;
+    animation: move-11 ease-in-out alternate 2.5s infinite;
+  }
+
+  @keyframes move-11 {
+    100% {
+      transform: translateX(0px);
+    }
+
+    0% {
+      transform: translateX(60px);
+    }
+  }
+
+  #hole12 {
+    display: inline-block;
+    position: fixed;
+    top: 43%;
+    left: 83%;
+    animation: move-12 ease-in-out alternate 1s infinite;
+  }
+
+  @keyframes move-12 {
+    100% {
+      transform: translateX(0px);
+    }
+
+    0% {
+      transform: translateX(50px);
+    }
+  }
+
+  #hole13 {
+    display: inline-block;
+    position: fixed;
+    top: 55%;
+    left: 75%;
+    animation: move-13 ease-in-out alternate 2.5s infinite;
+  }
+
+  @keyframes move-13 {
+    100% {
+      transform: translateX(-250px);
+    }
+
+    0% {
+      transform: translateX(50px);
+    }
+  }
+
+  #hole14 {
+    display: inline-block;
+    position: fixed;
+    top: 68%;
+    left: 64%;
+    animation: move-14 ease-in-out alternate 1.2s infinite;
+  }
+
+  @keyframes move-14 {
+    100% {
+      transform: translateX(0px);
+    }
+
+    0% {
+      transform: translateX(400px);
+    }
+  }
+
+  .fire1 {
+    position: fixed;
+    top: 5%;
+    left: 5%;
+  }
+
+  .fire2 {
+    position: fixed;
+    top: 17%;
+    left: 36%;
+  }
+
+  .fire3 {
+    position: fixed;
+    top: 18%;
+    left: 93%;
+  }
+
+  .fire4 {
+    position: fixed;
+    top: 30%;
+    left: 65%;
+  }
+
+  .fire5 {
+    position: fixed;
+    top: 46%;
+    left: 20%;
+  }
+
+  .fire6 {
+    position: fixed;
+    top: 43%;
+    left: 55%;
+  }
+
+  .fire7 {
+    position: fixed;
+    top: 75%;
+    left: 2%;
+  }
+
+  .fire8 {
+    position: fixed;
+    top: 80%;
+    left: 85%;
+  }

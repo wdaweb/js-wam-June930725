@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <!-- animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="./game.css">
+</head>
+
+<body>
+  <div class="container" id="games">
+    <div class="game-area">
+      <div class="bar">剩餘時間</div>
+      <div id="barbox"></div>
+
+      <!-- table#game>tr*3>td*3 -->
+      <table id="game">
+        <tr>
+          <!-- 設定按鍵盤 1~9 即可開始遊戲 -->
+          <td id="hole1"><img src="./images/hole_bottom.png" alt="" /></td>
+          <td id="hole2"><img src="./images/hole_bottom.png" alt="" /></td>
+          <td id="hole3"><img src="./images/hole_bottom.png" alt="" /></td>
+          <td id="hole4"><img src="./images/hole_bottom.png" alt="" /></td>
+          <td id="hole5"><img src="./images/hole_bottom.png" alt="" /></td>
+          <td id="hole6"><img src="./images/hole_bottom.png" alt="" /></td>
+          <td id="hole7"><img src="./images/hole_bottom.png" alt="" /></td>
+          <td id="hole8"><img src="./images/hole_bottom.png" alt="" /></td>
+          <td id="hole9"><img src="./images/hole_bottom.png" alt="" /></td>
+          <td id="hole10"><img src="./images/hole_bottom.png" alt="" /></td>
+          <td id="hole11"><img src="./images/hole_bottom.png" alt="" /></td>
+          <td id="hole12"><img src="./images/hole_bottom.png" alt="" /></td>
+          <td id="hole13"><img src="./images/hole_bottom.png" alt="" /></td>
+          <td id="hole14"><img src="./images/hole_bottom.png" alt="" /></td>
+        </tr>
+      </table>
+      <!-- <img class="fire1" src="./fire.svg" alt="" width="500px" /> -->
+      <img class="fire1" src="./fire.svg" alt="" width="120px" />
+      <img class="fire2" src="./fire.svg" alt="" width="140px" />
+      <img class="fire3" src="./fire.svg" alt="" width="150px" />
+      <img class="fire4" src="./fire.svg" alt="" width="130px" />
+      <img class="fire5" src="./fire.svg" alt="" width="190px" />
+      <img class="fire6" src="./fire.svg" alt="" width="200px" />
+      <img class="fire7" src="./fire.svg" alt="" width="230px" />
+      <img class="fire8" src="./fire.svg" alt="" width="260px" />
+    </div>
+    <div class="text-area">
+      <div class="animate__animated animate__bounceIn">
+        <input type="image" value="遊戲開始" id="btn-start" img src="./start-btn.svg" />
+      </div>
+      <br />
+      <div class="record">
+        <p>目前分數:<span id="text-score">0</span></p>
+        <p>
+          最高紀錄 <br />
+          玩家:<span id="high-player"></span> <br />
+          分數:<span id="high-score"></span>
+        </p>
+      </div>
+      <!-- 第一種播放音效方法 -->
+      <!-- <audio id="good" src="./音效/rihai.mp3"></audio> -->
+    </div>
+  </div>
+  <script src="./game.js"></script>
+</body>
+
+</html>
